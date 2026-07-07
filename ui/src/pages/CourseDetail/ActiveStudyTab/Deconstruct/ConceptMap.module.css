@@ -1,0 +1,128 @@
+.svgWrap {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: grab;
+}
+
+.svgWrap:active {
+  cursor: grabbing;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.nodeRect {
+  fill: #1e293b;
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 1.5px;
+}
+
+.nodeRect.active {
+  fill: var(--gold-mid);
+  stroke: var(--gold);
+}
+
+.nodeText {
+  fill: #e2e8f0;
+  font-size: 11px;
+  font-weight: 600;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.nodeText.active {
+  fill: var(--gold-ink);
+}
+
+.edge {
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 1.2px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+@media (max-width: 768px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.sidebar h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nodeListItem {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nodeListItem:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.nodeListItem.active {
+  color: var(--gold-light);
+  background: rgba(201, 151, 58, 0.12);
+  border-color: rgba(201, 151, 58, 0.35);
+  font-weight: 600;
+}
+
+.infoPanel {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.infoPanel .title {
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 0.3rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}

@@ -1,0 +1,49 @@
+# Plugin-scoped .gitignore (activates on standalone extraction).
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Generated podcast audio (runtime output, not source)
+static/podcasts/*.mp3
+
+# React UI (source lives in ui/src; static/ holds the build output).
+# Run `cd ui && npm install && npm run build` after checkout.
+ui/node_modules/
+ui/dist/
+ui/.tsbuild-node/
+ui/*.tsbuildinfo
+static/assets/
+static/index.html
+static/vite.svg
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

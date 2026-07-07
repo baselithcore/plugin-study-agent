@@ -1,0 +1,22 @@
+name: study-agent
+version: 0.1.0
+description: University Study Assistant plugin with Flashcards and voice-enabled Oral
+  Exam Simulator powered by MCTS.
+author: Baselith Core Team
+repository: https://github.com/baselithcore/plugin-study-agent
+license: MIT
+category: agent
+tenancy: personal
+tags:
+- study
+- education
+- mcts
+- voice
+required_resources:
+- llm
+- postgres
+python_dependencies:
+- paddleocr>=3.0.0
+- pymupdf>=1.24.0
+plugin_dependencies: {}
+integrity_sha256: dece428d9106d5909164de6621fa74782708b95538eecd80463dde4ebc63c3f5

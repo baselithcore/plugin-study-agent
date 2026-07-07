@@ -1,0 +1,23 @@
+.container {
+  padding: var(--space-md);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.detailsContainer {
+  background: rgba(15, 15, 25, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+
+.actionIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}

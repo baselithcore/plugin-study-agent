@@ -1,0 +1,26 @@
+.wrap {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-lg);
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.title {
+  margin: 0 0 0.4rem 0;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.action {
+  margin-top: 1rem;
+}

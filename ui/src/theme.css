@@ -1,0 +1,94 @@
+:root {
+  /* Brand accent — warm gold/brass, replacing the generic indigo/violet gradient. */
+  --gold-pale: #f0d9a8;
+  --gold-light: #eccb84;
+  --gold: #e0b563;
+  --gold-mid: #c9973a;
+  --gold-deep: #a97620;
+  --gold-ink: #1a1206;
+
+  /* Categorical accents (kept distinct from the brand gold on purpose). */
+  --purple: #a855f7;
+  --purple-light: #d8b4fe;
+  --purple-rgb: 168, 85, 247;
+
+  --danger: #ef4444;
+  --danger-deep: #dc2626;
+  --danger-light: #fca5a5;
+  --success: #10b981;
+  --success-deep: #059669;
+  --success-light: #34d399;
+  --warning: #f59e0b;
+  --warning-light: #fbbf24;
+
+  --bg: #0b0f19;
+  --surface: rgba(30, 30, 45, 0.35);
+  --surface-strong: rgba(15, 15, 25, 0.45);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-soft: rgba(255, 255, 255, 0.05);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.85rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 2.75rem;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(201, 151, 58, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(224, 181, 99, 0.15) 0px, transparent 50%);
+  color: var(--text-primary);
+  font-family:
+    'Outfit',
+    'Inter',
+    -apple-system,
+    sans-serif;
+}
+
+.section-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-mid) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
