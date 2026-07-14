@@ -1,6 +1,6 @@
 id: study-agent
 name: study-agent
-version: 0.1.0
+version: 0.1.1
 description: University Study Assistant plugin with Flashcards and voice-enabled Oral
   Exam Simulator powered by MCTS.
 author: Baselith Core Team
